@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 1 - Habitable Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="js/i18n.js" defer></script> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background: url('img/OIP (3).jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 0 5px #000;
+      backdrop-filter: blur(3px);
+      min-height: 100vh;
+      padding: 0 20px 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7em;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 1.6em;
+      margin-top: 30px;
+      color: #ffcc66;
+    }
+
+    .dangerous-creature img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 1.2px 30px;
+      font-size: 1.2em;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid #ffffff33;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 60px;
+      margin-top: 40px;
+    }
+
+    .level0 {
+      margin-right: 30px;
+    }
+
+    .hub {
+      margin-left: 20px;
+    }
+
+    .level2 {
+      margin-left: 50px;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+      border-color: #ffcc66;
+      color: #ffcc66;
+    }
+
+    .video-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .video-link:hover {
+      background-color: #ffcc66;
+      color: #000;
+    }
+
+    .lang-switcher {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.lang-switcher select {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffcc66;
+  border: 1px solid #ffcc66;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  box-shadow: 0 0 10px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.lang-switcher select:hover {
+  background: rgba(255, 204, 102, 0.1);
+  color: #fff9d0;
+  border-color: #fff9d0;
+  box-shadow: 0 0 12px #ffcc66;
+}
+
+  </style>
+</head>
+<div class="lang-switcher">
+  <select id="language">
+    <option value="ru">Русский</option>
+    <option value="ua">Українська</option>
+    <option value="en">English</option>
+  </select>
+</div>
+<body>
+  <div class="container">
+    <h1>Level 1 - Habitable Zone</h1>
+    <p data-i18n="l11">Level 1 — это второй уровень Backrooms, известный как 'Habitable Zone'. Это огромное складское помещение с бетонными полами и стенами, открытой арматурой и низко висящим туманом без видимого источника. В отличие от Level 0, здесь есть постоянное снабжение водой и электричеством, что позволяет выживать бесконечно долго при соблюдении соответствующих мер предосторожности.</p>
+
+    <h2 data-i18n="l12" class="section-title">Сущности</h2>
+    <p data-i18n="l13">На этом уровне обитают различные сущности, включая Facelings, Clumps, Hounds, Dullers и Deathmoths. Однако есть и уникальные для Level 1 сущности, такие как False Puddles — существа, маскирующиеся под лужи Almond Water, но на самом деле представляющие собой глубокие ямы с острыми зубами.</p>
+
+    <h2 data-i18n="l14" class="section-title">Выход</h2>
+    <p data-i18n="l15">Неразблокированная дверь может привести на Уровень 2.</p>
+
+    <a href="https://www.youtube.com/watch?v=0MW94fbEn9w" class="video-link" target="_blank">Level 1 Backrooms video </a>
+
+    <!-- Кнопка назад в HUB -->
+     <div class="button-row">
+      <a href="level0.html" class="back-button level0">Level 0</a>
+   <a href="index.html" class="back-button hub">Back to level HUB</a>
+   <a href="level2.html" class="back-button level2">Level 2</a>
+ </div>
+</body>
+</html>

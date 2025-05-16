@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 0 - Backrooms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="js/i18n.js" defer></script> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background: url('img/OIP.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 0 5px #000;
+      backdrop-filter: blur(3px);
+      min-height: 100vh;
+      padding: 0 20px 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7em;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 1.6em;
+      margin-top: 30px;
+      color: #ffcc66;
+    }
+
+    .dangerous-creature img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 1.2px 30px;
+      font-size: 1.2em;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid #ffffff33;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .hub {
+      margin-right: 50px;
+    }
+
+    .level1 {
+      margin-left: 300px;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+      border-color: #ffcc66;
+      color: #ffcc66;
+    }
+
+    .video-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .video-link:hover {
+      background-color: #ffcc66;
+      color: #000;
+    }
+
+        .lang-switcher {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.lang-switcher select {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffcc66;
+  border: 1px solid #ffcc66;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  box-shadow: 0 0 10px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.lang-switcher select:hover {
+  background: rgba(255, 204, 102, 0.1);
+  color: #fff9d0;
+  border-color: #fff9d0;
+  box-shadow: 0 0 12px #ffcc66;
+}
+
+  </style>
+</head>
+<div class="lang-switcher">
+  <select id="language">
+    <option value="ru">Русский</option>
+    <option value="ua">Українська</option>
+    <option value="en">English</option>
+  </select>
+</div>
+<body>
+  <div class="container">
+    <h1>Level 0 - Backrooms</h1>
+    <p data-i18n="l01">Level 0 — это первый и один из самых известных уровней в Backrooms. Это место представляет собой бесконечные желтые коридоры с мерцающим светом и запахом сырого ковра. Свет, как правило, тусклый и неравномерный, а запах напоминает затхлость и плесень. И кажется, что вы никогда не выйдете, независимо от того, в каком направлении вы идете.</p>
+
+    <h2 data-i18n="l02" class="section-title">Опасное Существо</h2>
+    <p data-i18n="l03">На этом уровне встречаются страшные существа, которых называют 'Темные лица'. Они часто появляются из углов и дверей и движутся в тени. Эти существа не представляют немедленной угрозы, но их присутствие вызывает глубокое чувство тревоги. Когда вы находитесь рядом, кажется, что кто-то наблюдает за вами, но, если вы повернетесь, никто не будет рядом.</p>
+
+    <div class="dangerous-creature">
+      <img src="img/ss_7e94b69940005e3ba12c63d6ccc56386ff9141a9.1920x1080.jpg" alt="Темное Существо">
+    </div>
+
+    <h2 data-i18n="l04" class="section-title">Темные Лица</h2>
+    <p data-i18n="l05">Темные лица — это существа, которые никогда не показывают свои черты, оставаясь в темных тенях. Они известны тем, что могут следить за вами без какого-либо звука. Внешне они могут напоминать силуэты людей, но с мракобесными чертами. Некоторые говорят, что они способны передвигаться без звука, скрываясь в самых темных уголках этого уровня.</p>
+
+    <div class="dangerous-creature">
+      <img src="img/R (1).jpg" alt="Темные Лица">
+    </div>
+
+    <p data-i18n="l06">Лучший способ избежать столкновения с этими существами — держаться подальше от темных углов и оставаться на открытых участках. Не пытайтесь разгадывать их движения — лучше сохранять спокойствие и следовать в известном направлении.</p>
+
+    <a href="https://www.youtube.com/watch?v=H4dGpz6cnHo" class="video-link" target="_blank">Level 0 Backrooms video </a>
+
+    <p data-i18n="l07">Блуждая достаточно долго и далеко, это может привести к тому, что коридоры постепенно перейдут в гаражи Уровня 1.</p>
+
+    <!-- Кнопка назад в HUB -->
+    <div class="button-row">
+   <a href="index.html" class="back-button hub">Back to level HUB</a>
+   <a href="level1.html" class="back-button level1">Level 1</a>
+ </div>
+</body>
+</html>

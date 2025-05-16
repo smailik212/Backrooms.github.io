@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+  <title data-i18n="title">Backrooms: HUB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="js/i18n.js" defer></script> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background: url('img/R.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 0 5px #000;
+      backdrop-filter: blur(3px);
+      min-height: 100vh;
+      padding: 0 20px 40px;
+    }
+
+    header {
+      padding: 20px 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border: 1px solid #ffffff33;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .nav-buttons a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+      border-color: #ffcc66;
+      color: #ffcc66;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7em;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 1.6em;
+      margin-top: 30px;
+      color: #ffcc66;
+    }
+
+    .lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.lang-switcher select {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffcc66;
+  border: 1px solid #ffcc66;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  box-shadow: 0 0 10px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.lang-switcher select:hover {
+  background: rgba(255, 204, 102, 0.1);
+  color: #fff9d0;
+  border-color: #fff9d0;
+  box-shadow: 0 0 12px #ffcc66;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Backrooms HUB</h1>
+<div class="lang-switcher">
+  <select id="language">
+    <option value="ru">Русский</option>
+    <option value="ua">Українська</option>
+    <option value="en">English</option>
+  </select>
+</div>
+    <div class="nav-buttons">
+      <a href="level0.html">Level 0</a>
+      <a href="level1.html">Level 1</a>
+      <a href="level2.html">Level 2</a>
+      <a href="level3.html">Level 3</a>
+      <a href="level4.html">Level 4</a>
+      <a href="level5.html">Level 5</a>
+      <a href="level37.html">Level 37</a>
+      <a href="level94.html">Level 94</a>
+      <a href="level188.html">Level 188</a>
+      <a href="levelfun.html">Level fun?</a>
+      <a href="level.html">Level ???</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <p data-i18n="liminal"><strong>Liminal space</strong> — это промежуточные, странно знакомые места: пустые коридоры школ, отели без людей, офисы ночью. Они вызывают чувство ностальгии, тревоги и уединения. Это пространства, застрявшие между прошлым и настоящим, между здесь и нигде.</p>
+    
+    <p data-i18n="backrooms"><strong>Backrooms</strong> — это концепт альтернативной реальности, в которую можно попасть, 'выпав из реальности'. Пространство бесконечных жёлтых комнат, гул света, сырой ковёр — и дальше всё глубже, темнее, страннее. Это не просто кошмар, а мир, полный уровней, сущностей и загадок.</p>
+    
+    <h2 class="section-title">Level: HUB</h2>
+    <p data-i18n="hubDesc1">Hub — это уникальный уровень, который служит центральной точкой доступа ко многим другим уровням Backrooms. Он выглядит как длинный бетонный коридор с дверьми по обе стороны. Свет тусклый, слышно гудение электричества. Уровень безопасен, не содержит враждебных сущностей, и даёт передышку скитальцам.</p>
+
+    <p data-i18n="hubDesc2">Каждая дверь в этом коридоре может вести на совершенно другой уровень — от знакомого до смертельно опасного. Многие Wanderers используют HUB как опорную точку для исследования других уровней.</p>
+    
+    <p data-i18n="hubDesc3">Легенды гласят, что если долго идти по коридору HUB, можно найти двери, которые ведут в места, не описанные ни в одном архиве...</p>
+  </div>
+</body>
+</html>
